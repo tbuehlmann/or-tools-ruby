@@ -36,6 +36,9 @@ else
   elsif os == "ubuntu" && os_version == "20.04" && !arm
     filename = "or-tools_amd64_ubuntu-20.04_cpp_v#{version}.tar.gz"
     checksum = "cfe5068b0fe4bafff916ab1b75670b341e80571c8cfd8b647dfe3e97a233e836"
+  elsif os == "debian" && os_version == "13" && !arm
+    filename = "or-tools_amd64_debian-12_cpp_v#{version}.tar.gz"
+    checksum = "285e8ec3a3399e45cdb4f67f48d4b65dbfa9c013b29036d409c72f96f0f34ab9"
   elsif os == "debian" && os_version == "12" && !arm
     filename = "or-tools_amd64_debian-12_cpp_v#{version}.tar.gz"
     checksum = "b2c9870c8778eeb26c98742402da17da039c058fca7eca87be5c90832b04153c"
