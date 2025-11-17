@@ -37,8 +37,8 @@ else
     filename = "or-tools_amd64_ubuntu-20.04_cpp_v#{version}.tar.gz"
     checksum = "7705a7c11e0db4ec1d7841e184acd204787174c6cbdb2fbd81169823ed148c6c"
   elsif os == "debian" && os_version == "13" && !arm
-    filename = "or-tools_amd64_debian-12_cpp_v#{version}.tar.gz"
-    checksum = "285e8ec3a3399e45cdb4f67f48d4b65dbfa9c013b29036d409c72f96f0f34ab9"
+    filename = "or-tools_amd64_debian-sid_cpp_v#{version}.tar.gz"
+    checksum = "3a248bef58439dbeee3e190f32384a63f090458ad3056c7b4d53bf5c2ba2df5e"
   elsif os == "debian" && os_version == "12" && !arm
     filename = "or-tools_amd64_debian-12_cpp_v#{version}.tar.gz"
     checksum = "285e8ec3a3399e45cdb4f67f48d4b65dbfa9c013b29036d409c72f96f0f34ab9"
