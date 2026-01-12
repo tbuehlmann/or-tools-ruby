@@ -45,6 +45,9 @@ else
   elsif os == "debian" && os_version == "11" && !arm
     filename = "or-tools_amd64_debian-11_cpp_v#{version}.tar.gz"
     checksum = "c6c4341ff8f9aae3e77f161ca8ea3bb0d22f35ff696596fd11ec51c5da6bd4f7"
+  elsif os == "debian" && os_info["VERSION_CODENAME"] == "forky"
+    filename = "or-tools_amd64_debian-sid_cpp_v#{version}.tar.gz"
+    checksum = "3a248bef58439dbeee3e190f32384a63f090458ad3056c7b4d53bf5c2ba2df5e"
   elsif os == "arch" && !arm
     filename = "or-tools_amd64_archlinux_cpp_v#{version}.tar.gz"
     checksum = "5505079f7b2a6d9379ba6ae446a3a639226d455ef1cfa32d2d23ffc4566e3a4b"
