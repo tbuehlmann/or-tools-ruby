@@ -27,7 +27,10 @@ else
   os = os_info["ID"]
   os_version = os_info["VERSION_ID"]
 
-  if os == "ubuntu" && os_version == "24.04" && !arm
+  if os == "ubuntu" && os_version == "26.04" && !arm
+    filename = "or-tools_amd64_ubuntu-24.04_cpp_v#{version}.tar.gz"
+    checksum = "6f389320672cee00b78aacefb2bde33fef0bb988c3b2735573b9fffd1047fbda"
+  elsif os == "ubuntu" && os_version == "24.04" && !arm
     filename = "or-tools_amd64_ubuntu-24.04_cpp_v#{version}.tar.gz"
     checksum = "6f389320672cee00b78aacefb2bde33fef0bb988c3b2735573b9fffd1047fbda"
   elsif os == "ubuntu" && os_version == "22.04" && !arm
